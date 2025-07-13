@@ -1,0 +1,189 @@
+<!-- Create a new website using HTML and Bootstrap. 
+The website must include the following:
+
+At least 2 pages.
+A Bootstrap navbar, table, and form.
+Bootstrap grid used throughout to format elements
+Elements should stack vertically when the window is small -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Bootstrap Project</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Uchiha Clan</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="UchihaInfo.html">Uchiha Clan Information</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar -->
+
+  <!-- hero -->
+  <div class="text-center">
+    <img class="img-fluid" src="images/hero_image.jpg" alt="Uchiha Clan Hero Image">
+  </div>
+  <!-- welcome -->
+  <h1 class="text-center p-1">Learn About The Uchiha Clan!</h1>
+  <div>
+    <p class="text-center fs-5">The Uchiha Clan is one of the most powerful clans in the Naruto universe, known for
+      their
+      Sharingan eyes and exceptional combat skills. This website is dedicated to providing information about the Uchiha
+      Clan and its members.</p>
+  </div>
+
+  <!-- cards -->
+  <div class="container">
+    <div class="row row-cols-1 row-cols-lg-3 g-3 m-3 pt-5">
+
+      <div class="col">
+        <div class="card h-100 shadow-lg">
+          <img src="images/madara_uchiha.png" class="card-img-top" alt="Madara Uchiha">
+          <div class="card-body">
+            <h5 class="card-title">Madara Uchiha</h5>
+            <p class="card-text fs-5">Founder of the Uchiha Clan and one of the main antagonists in the Naruto Universe.
+            </p>
+            <a href="https://naruto.fandom.com/wiki/Madara_Uchiha" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 shadow-lg">
+          <img src="images/itachi_uchiha.jpg" class="card-img-top" alt="Itachi Uchiha">
+          <div class="card-body">
+            <h5 class="card-title">Itachi Uchiha</h5>
+            <p class="card-text fs-5">A prodigy of the Uchiha Clan, known for his Sharingan and tragic backstory.</p>
+            <a href="https://naruto.fandom.com/wiki/Itachi_Uchiha" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 shadow-lg">
+          <img src="images/sasuke_uchiha.webp" class="card-img-top" alt="Sasuke Uchiha">
+          <div class="card-body">
+            <h5 class="card-title">Sasuke Uchiha</h5>
+            <p class="card-text fs-5">The last surviving member of the Uchiha Clan, seeking revenge against his brother
+              Itachi.</p>
+            <a href="https://naruto.fandom.com/wiki/Sasuke_Uchiha" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- picture_div -->
+  <div class="container mt-5 mb-5 pt-5 pb-5 text-center">
+    <div class="row mb-3 gx-0 g-0">
+      <div class="col-sm-12 pb-3">
+        <h2>Uchiha Clan has amazing combat skills!</h2>
+      </div>
+    </div>
+    <div class="row mb-4 gx-0 g-0">
+      <div class="col-12 col-md-8 mb-3 mb-md-0">
+        <img src="images/combat_skills.gif" alt="combat skills" width="800" height="400" class="img-fluid">
+      </div>
+      <div class="col-12 col-md-4 gx-0 g-0">
+        <img src="images/combat_skills2.gif" alt="combat skills" width="400" class="img-fluid">
+      </div>
+    </div>
+    <div class="row mb-4 gx-0 g-0">
+      <div class="col-12 col-md-4 mb-3 mb-md-0">
+        <img src="images/combat_skills3.gif" alt="combat skills" width="400" height="400" class="img-fluid">
+      </div>
+      <div class="col-12 col-md-8">
+        <img src="images/combat_skills4.gif" alt="combat skills" width="800" height="400" class="img-fluid">
+      </div>
+    </div>
+  </div>
+
+  <!-- overlay-card-img -->
+  <div class="d-flex justify-content-center">
+    <div class="card mb-3" style="max-width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="images/overlay_card_image.png" class="img-fluid rounded-start" alt="Uchiha Clan Overlay Image">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Uchiha Clan</h5>
+            <p class="card-text">The best clan in the Naruto universe, known for their Sharingan and exceptional combat
+              skills.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- form -->
+  <h3 class="text-center mb-5 mt-5">If you liked our website, we can send you updates about the Uchiha Clan! Via email.
+  </h3>
+
+  <form class="row g-3 ms-5 me-5">
+    <div class="col-md-4">
+      <label for="validationDefaultUsername" class="form-label">Email</label>
+      <div class="input-group">
+        <span class="input-group-text" id="inputGroupPrepend2">@</span>
+        <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2"
+          required>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <button class="btn btn-primary" type="submit">Submit form</button>
+    </div>
+  </form>
+
+  <!-- footer -->
+  <footer class="pt-5 pb-5">
+    <div class="text-center">
+      <h5>© 2025 Uchiha Clan Fan Page</h5>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
